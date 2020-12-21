@@ -128,6 +128,60 @@ else
   p "それ以外です"
 end
 
+p "string1"
+p String.new("string2")
+
+p [1,2,3]
+p Array.new 3
+
+class Animal
+end
+
+animal = Animal.new
+p animal
 
 
+
+def print_apple
+  p "りんご"
+end
+
+print_apple
+
+
+class Fruits
+  def self.name
+    p "りんご"
+  end
+  
+  def name
+    p "hello"
+  end
+end
+
+Fruits.name
+
+fruits = Fruits.new
+fruits.name
+
+
+class Animal
+  def greet
+    p "こんにちは！Animalのインスタンスです！"
+  end
+end
+
+animal = Animal.new
+animal.greet
+
+class Animal
+  def initialize
+    p "インスタンスが作られました"
+  end
+end
+
+animal = Animal.new
+
+    
+    
 
